@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    text-align: center;
+}
 
 /* Header styling */
 .header1 {
@@ -13,7 +16,7 @@
     padding: 15px;
     background-color: #f1f1f1;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    flex-wrap: wrap; /* for wrapping in small screens */
+    flex-wrap: wrap;
     text-align: center;
 }
 
@@ -30,23 +33,23 @@
     font-weight: bold;
 }
 
-/* Button styling */
-button {
-    width: 100%;
-    font-size: 28px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
-    
+/* Login Button styling */
+.btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 12px 20px;
+    margin: 10px auto;
+    text-align: center;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 300px;
+    font-weight: bold;
 }
 
-button .btn {
-    font-size: large;
-}
-
-/* ✅ Media Query for Mobile Devices */
+/* Responsive styles */
 @media (max-width: 600px) {
     .header1 {
         flex-direction: column;
@@ -62,7 +65,9 @@ button .btn {
         font-size: 20px;
     }
 
-    button {
-        font-size: 22px;
+    .btn {
+        font-size: 18px;
+        padding: 10px;
+        width: 100%;
     }
 }
